@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page-menu, .page-about {
+  background-image: url(./assets/graphics/graphics-header.svg), url(./assets/graphics/graphics-footer.svg);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: contain;
+  background-color: #F3E4E1;
   min-height: 100vh;
+}
+
+.product-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.meny-title{
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: #2F2926;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-info{
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+  align-items: center;
+  color: #2F2926;
+}
+
+.product-desc{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #2F2926;
+}
+
+.add-product-btn{
+  background-image: url(./assets/graphics/add.svg);
+  background-color: black;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.cart-wrapper{
+background-color: white;
+
+}
+
+footer {
+  height: 100px;
 }
