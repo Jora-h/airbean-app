@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
+import cartReducer from './slices/cartSlice';
+// import orderReducer from './slices/orderSlice';
+
+const reducers = combineReducers({
+  cart: cartReducer,
+  // order: orderReducer,
+  // ... add more reducers here
+})
+
+const store = createStore(reducers);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
