@@ -6,13 +6,10 @@ export default function Home() {
       <section className="HomePage">
  
           <div className="ContainerHome">
-          <img src= {Foto} alt="" />
-
-           
+          <img src= {Foto} alt="" />  
           </div>
 
-       
-        </section>
+      </section>
     );
 }
 

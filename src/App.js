@@ -4,6 +4,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Status from './views/Status';
 import Menu from './views/Menu';
+import Cart from './views/Cart';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/home" element={ <Home /> } />
           <Route path="/menu" element={ <Menu /> } />
+          <Route path="/cart" element={ <Cart /> } />
           <Route path="/about" element={ <About /> } />
           <Route path="/status" element={ <Status/> } />
         </Routes>
