@@ -69,3 +69,15 @@ min-height: 100vh;
   display: flex;
   justify-content: center;
 }
+
+.AboutPage {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+
+  
+  color: #2F2926;
+  
+}
