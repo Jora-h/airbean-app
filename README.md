@@ -1,6 +1,6 @@
 # AirBean app
 
-description of the app
+Airbean is a web app for ordering coffee and  delivered it via drone
 
 ## Assets TBD
 - [Figma (UX/UI Design)](https://www.figma.com/file/kXZaZLMYQzXzgC2k6o4ne0/AirBean-v.1.2---React?node-id=6%3A145)
