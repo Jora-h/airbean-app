@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+
 import { selectCart, clearCart } from "../slices/cartSlice";
 
 export default function Cart () {
