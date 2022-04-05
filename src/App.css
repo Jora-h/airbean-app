@@ -193,3 +193,31 @@ hr{
   display: flex;
   justify-content: center;
 }
+
+
+.page-status {
+  background-color: #E5674E;
+  height: 100vh;
+display: flex; 
+flex-direction: column;
+justify-content: center;
+}
+
+
+.status-p {
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 120%;
+
+
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+

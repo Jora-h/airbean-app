@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import droneimg from "../assets/graphics/drone.svg"
 export default function Status() {
 
   const [order, setOrder] = useState([]);
@@ -19,10 +19,10 @@ export default function Status() {
   
 
   return (
-        <div className="page-status">
+        <div className="page-status"> 
 
-            {/* <p>Ordernummer #12DV23F -</p> */}
-            <div>Image</div>
+             <p className="status-p"> Ordernummer <strong>#12DV23F</strong>-</p> 
+            <img src={droneimg} alt=""/> 
             <h1> Tack för din beställning</h1>
             <p1> 13 minuter </p1>
             
