@@ -17,9 +17,9 @@ export default function Menu () {
     return (
         <div className="page-menu">
             <Header />
-            <h1 className="meny-title">Meny</h1>
-            {/* loop over the products list and display product component  */}
-            {/* for each product send name, price, description & id */}
+
+            <h1 className="page-title">Meny</h1>
+            <div>
             {
                 products.map((product) => <Product 
                         id={product.id} 
@@ -28,6 +28,7 @@ export default function Menu () {
                         price={product.price} 
                     />)
             }
+            </div>
             
             <Footer />
         </div>

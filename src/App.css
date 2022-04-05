@@ -1,4 +1,5 @@
-.page-menu, .page-about {
+
+.page-menu, .page-about, .page-cart {
   background-image: url(./assets/graphics/graphics-header.svg), url(./assets/graphics/graphics-footer.svg);
   background-repeat: no-repeat;
   background-position: top, bottom;
@@ -7,12 +8,119 @@
   min-height: 100vh;
 }
 
-.product-container{
-  display: flex;
-  justify-content: center;
+
+
+footer {
+  height: 200px;
 }
 
-.meny-title{
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  padding: 20px;
+}
+
+.page-cart{ 
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+.nav-icon{
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  display: flex;
+
+}
+
+.cart-icon{
+  background: #2F2926;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.cart-payment-btn{
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #2F2926;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.quantity{
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+align-items: center;
+text-align: center;
+color: #2F2926;
+}
+
+.product-quantity{
+  background-color: #E5674E;
+  border-radius: 50%;
+  padding: 4px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left:60% ;
+  bottom: 70%;
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.product-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-menu{
+  height:100vh;
+  background-color: #2F2926;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.product-info{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0px;
+}
+.page-title{
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
@@ -23,14 +131,37 @@
   color: #2F2926;
 }
 
-.product-info{
+.add-product-btn{
+  background-color: black;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  /* align-items: center ; */
+  /* align-content: center; */
+  margin-right:20px ;
+}
+
+.inline-info-product{
+  display: inline;
+  flex-direction: column;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
   line-height: 120%;
-  align-items: center;
+  /* align-items: center; */
   color: #2F2926;
+  margin-bottom: 0;
+}
+
+hr{
+  border: 1px dashed rgba(0, 0, 0, 0.4);
 }
 
 .product-desc{
@@ -42,29 +173,22 @@
   color: #2F2926;
 }
 
-.add-product-btn{
-  background-image: url(./assets/graphics/add.svg);
-  background-color: black;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
 .cart-wrapper{
-background-color: white;
-
-}
-
-footer {
-  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .HomePage {
   background-color: #38846D;
-background-image: url(./assets/graphics/intro-graphic-left.svg),url(./assets/graphics/intro-graphic-right.svg);
-background-repeat: no-repeat;
-background-position: left, right;
-min-height: 100vh;
+  background-image: url(./assets/graphics/intro-graphic-left.svg),url(./assets/graphics/intro-graphic-right.svg);
+  background-repeat: no-repeat;
+  background-position: left, right;
+  min-height: 100vh;
 }
+
 .ContainerHome {
   display: flex;
   justify-content: center;

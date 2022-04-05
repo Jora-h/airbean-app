@@ -9,15 +9,14 @@ export const cartSlice = createSlice({
 
     reducers: {
         addProduct: (state, { payload: { id, title, price, desc }}) => {
-            state.value.push({ id, title, price, desc, count: 1 });
+            state.value.push({ id, title, price, desc });
         },
-        clearCart: (state) => {
-            state.value = [];
-        },
+        // deletProduct: (state) => {
+        // }
     }
 });
 
-export const { addProduct, clearCart } = cartSlice.actions;
+export const { addProduct } = cartSlice.actions;
 
 export const selectCart = (state) => state.cart.value; 
 

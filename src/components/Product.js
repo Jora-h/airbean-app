@@ -1,16 +1,18 @@
 import { useDispatch } from "react-redux";
 import { addProduct } from "../slices/cartSlice";
+import  AddIcon from "../assets/graphics/add.svg"
 
 export default function Product({ id, title, price, desc }){
     const dispatch = useDispatch();
-
-    // display product informations here, 
-    // do not focus on style
+    
     return (
         <section className="product-container">
-            <button onClick={() => dispatch(addProduct({ id, title, price, desc }))} className="add-product-btn" ></button>
-            <p  className="product-info">{ id } - { title } - { price }kr</p> <br/>
-            <span className="product-desc">{ desc }</span>
+            <div onClick={() => dispatch(addProduct({ id, title, price, desc }))} className="add-product-btn" ><img src={ AddIcon } alt=""/></div>
+            <div className="inline-info-product">
+                <p className="product-info">{ title } <hr/> </p>
+                <span className="product-desc">{ desc }</span>
+            </div>
+            <p className="product-info"> { price }kr</p>
         </section>
     )
 }

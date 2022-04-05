@@ -1,35 +1,14 @@
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { selectCart } from "../slices/cartSlice";
+import CartIcon from "../assets/graphics/bag.svg"
 
-import { selectCart, clearCart } from "../slices/cartSlice";
-
-export default function Cart () {
-  // create showCart state using useState
-  const [showCart, setShowCart] = useState(false);
-
-  const dispatch = useDispatch();
+export default function ShoppingCart () {
   const products = useSelector(selectCart);
-
-
-  // create the handler for showing the product dropdown (follow the menu example)
-  function handleToggleCart() {
-    if(showCart){
-      setShowCart(false)
-    } else {
-      setShowCart(true)
-    }
-  }
-
-  return <div>
-    <button onClick={handleToggleCart}>Cart</button>
-    <button onClick={() => dispatch(clearCart())}>Clear</button>
-    { showCart && 
-    products.map(product => <div className="cart-wrapper">{product.title} - {product.count} - {product.price}</div>)}
-  </div>
+  
+  return(
+      <div>
+          <Link to="/cart" className="cart-icon"><img src={CartIcon} alt="" /> <div className="product-quantity">{products.length}</div></Link>
+      </div>
+  )
 }
-
-
-
-/* add button to toggle using the handler */
-/* use showCart state to show/hide the list of products */
-/* wrap list of products with a div and give it white background */
