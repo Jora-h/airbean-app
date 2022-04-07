@@ -16,8 +16,6 @@ export default function Status() {
             })
     }, []);
 
-  
-
   return (
         <div className="page-status">
 
