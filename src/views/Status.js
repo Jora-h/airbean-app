@@ -1,32 +1,22 @@
 // get order with fetch 
 // example can be found in Menu.js
 
-import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import droneimg from "../assets/graphics/drone.svg"
 export default function Status() {
 
-  const [order, setOrder] = useState([]);
-
-    useEffect(() => {
-        fetch("https://my-json-server.typicode.com/zocom-christoffer-wallenberg/airbean/order")
-            .then(res => res.json())
-            .then((data) => {
-                setOrder(data);
-            })
-    }, []);
-
+ 
   
 
   return (
-        <div className="page-status"> 
+        <div className="page-status">  
 
-             <p className="status-p"> Ordernummer <strong>#12DV23F</strong>-</p> 
-            <img src={droneimg} alt=""/> 
-            <h1> Tack för din beställning</h1>
-            <p1> 13 minuter </p1>
-            
-            <button><Link to="/menu">Ok, cool</Link></button>;
+                  <p className="status-p1"> Ordernummer <strong>#12DV23F</strong>-</p> 
+                  <div className="droneimg-container"><img src={droneimg} alt=""/></div>
+                  <h1 className="title-status"> Tack för din beställning</h1>
+                  <p className="status-p2"> 13 minuter </p>
+                  <Link to="/menu" className="status-button">Ok, cool</Link>
 
         </div>
         );
