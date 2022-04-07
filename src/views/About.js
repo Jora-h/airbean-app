@@ -19,7 +19,7 @@ Roast id macchiato, single shot siphon mazagran milk fair trade est aroma a half
 
 
          <div className="Owner-About"> 
-         <img src={Author} alt= "Owner of company"/>
+         <img src={Author} alt= "Owner of company" />
          <h3> Eva Cortado</h3>
          <p>VD & Grundar</p>
          </div>
