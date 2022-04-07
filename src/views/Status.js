@@ -17,7 +17,6 @@ export default function Status() {
                   <h1 className="title-status"> Tack för din beställning</h1>
                   <p className="status-p2"> 13 minuter </p>
                   <Link to="/menu" className="status-button">Ok, cool</Link>
-
         </div>
         );
 }
