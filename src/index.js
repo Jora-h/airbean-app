@@ -4,17 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
-import cartReducer from './slices/cartSlice';
-// import orderReducer from './slices/orderSlice';
+import store from './redux/store';
 
-const reducers = combineReducers({
-  cart: cartReducer,
-  // order: orderReducer,
-  // ... add more reducers here
-})
-
-const store = createStore(reducers);
 
 ReactDOM.render(
   <React.StrictMode>

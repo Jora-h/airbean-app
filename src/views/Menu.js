@@ -21,7 +21,7 @@ export default function Menu () {
             <h1 className="page-title">Meny</h1>
             <div>
             {
-                products.map((product) => <Product 
+                products.map((product) => <Product
                         id={product.id} 
                         desc={product.desc}
                         title={product.title}

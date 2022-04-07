@@ -21,7 +21,7 @@ export default function Status() {
   return (
         <div className="page-status">
 
-            {/* <p>Ordernummer #12DV23F -</p> */}
+            <p>Ordernummer {order}</p>
             <div>Image</div>
             <h1> Tack för din beställning</h1>
             <p1> 13 minuter </p1>
