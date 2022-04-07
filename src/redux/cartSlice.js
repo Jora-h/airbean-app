@@ -17,6 +17,7 @@ export const cartSlice = createSlice({
                 state.value.push({ id, title, price, desc, count: 1, total: price });
             }
         },
+
         deletProduct: (state, {payload: {id}}) => {
             const foundProduct = state.value.find(product => product.id === id);
             if( foundProduct.count >1){
@@ -32,5 +33,6 @@ export const cartSlice = createSlice({
 export const { addProduct, deletProduct } = cartSlice.actions;
 
 export const selectCart = (state) => state.cart.value;
+
 
 export default cartSlice.reducer;
