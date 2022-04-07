@@ -186,7 +186,11 @@ hr{
   background-image: url(./assets/graphics/intro-graphic-left.svg),url(./assets/graphics/intro-graphic-right.svg);
   background-repeat: no-repeat;
   background-position: left, right;
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 110vh;
+  background-size:contain;
 }
 
 .ContainerHome {
@@ -205,3 +209,12 @@ hr{
   color: #2F2926;
   
 }
+.AboutPage {
+display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+
+

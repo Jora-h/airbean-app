@@ -6,8 +6,7 @@ import Author from "../assets/graphics/eva-cortado.jpg";
 export default function About() {
     return(
         <div className="page-about">
-            <img src={Information} alt=""/>
-            <img src={Author} alt= ""/>
+            <img src={Information} alt=""/> 
             <Header />
             <h1>Vårt kaffe</h1>
     <p>            Pumpkin spice mug, barista cup, sit macchiato, kopi-luwak, doppio, grounds dripper, crema, strong whipped, variety extra iced id lungo half and half mazagran. Pumpkin spice.
@@ -17,6 +16,13 @@ Que dark fair trade, spoon decaffeinated, barista wings whipped, as rich afterta
 Roast id macchiato, single shot siphon mazagran milk fair trade est aroma a half and half and, so, galão iced to go, whipped as cream cup pumpkin spice iced. At extra, rich grinder, brewed to go, steamed half and half at, that, percolator macchiato trifecta and body as arabica dripper. In galão black java milk sit trifecta, robusta, acerbic café au lait instant shop latte. Seasonal bar shop filter aroma id, crema, affogato viennese cultivar aftertaste, seasonal, percolator cream black, galão flavour, milk aromatic turkish skinny crema.
          
          </p>
+
+
+         <div className="Owner-About"> 
+         <img src={Author} alt= "Owner of company"/>
+         <h3> Eva Cortado</h3>
+         <p>VD & Grundar</p>
+         </div>
             <Footer />
         </div>
     ) 
