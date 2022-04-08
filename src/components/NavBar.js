@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import NavIcon from "../assets/graphics/navicon.svg";
+import NavCloseIcon from "../assets/graphics/close.svg"
 
 export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -18,13 +19,18 @@ export default function NavBar() {
     }
     return(
         <div>
-            <div onClick={handleToggleMenu} className="nav-icon"><img src={NavIcon} alt="" /></div>
+            <div><div onClick={handleToggleMenu} className="nav-icon"><img src={NavIcon} alt="" /></div></div>
             { showMenu && 
-                <div className="container-menu">
-                    <Link to="/menu">Meny</Link>
-                    <Link to="/about">Vårt kaffe</Link>
-                    <Link to="/status">Orderstatus</Link>
-                    <button onClick={closeMenu}>Close</button>
+                <div className="container-nav">
+                    <div onClick={closeMenu} className="close-icon-container"><img src={NavCloseIcon} alt="" className="nav-icon-close" /></div>
+                    <div className="nav-option">
+                        <Link to="/menu" className="nav-text">Meny</Link>
+                        <hr></hr>
+                        <Link to="/about" className="nav-text">Vårt kaffe</Link>
+                        <hr></hr>
+                        <Link to="/status" className="nav-text">Orderstatus</Link>
+                        <hr></hr>
+                    </div>
                 </div>
             }
         </div>    
