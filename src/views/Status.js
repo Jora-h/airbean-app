@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Droneimg from "../assets/graphics/drone.svg"
 
 export default function Status() {
   const [etaOrder, setEtaOrder] = useState(0);
@@ -23,12 +24,14 @@ export default function Status() {
 
     return (
       <div className="page-status">
-          <p>Ordernummer {orderNumber} </p>
-          <div>Image</div>
-          <h1> Tack för din beställning</h1>
-          <p1> {etaOrder} minuter </p1>
-          <button><Link to="/menu">Ok, cool</Link></button>
+          <p className="status-p1">Ordernummer <strong>{orderNumber} </strong></p>
+          <div className="droneimg-container"><img src={Droneimg} alt=""/></div>
+          <h1 className="title-status"> Tack för din beställning</h1>
+          <p className="status-p2"> <strong>{etaOrder}</strong> minuter </p>
+          <div className="cart-btn"><Link to="/menu" className="status-button">Ok, cool</Link></div>
       </div>
     )
         
   }
+
+
